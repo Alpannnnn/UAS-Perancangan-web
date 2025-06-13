@@ -266,6 +266,14 @@
         let currentDiscount = 0;
         let appliedPromoCode = '';
         
+        // Database kode promo
+        const promoCodes = {
+            'DISC2025' : {discount: 10, type: 'percentage', description: 'Diskon 10%'},
+            'FREEPLSTN' : {discount: 20, type: 'percentage', description: 'Diskon 20%'},
+            'HAPPYDAY' : {discount: 50000, type: 'fixed', description: 'Diskon Rp 50.000'},
+            'SUPERDEAL' : {discount: 25, type: 'percentage', description: 'Diskon 25%'},
+            'WELCOME' : {discount: 100000, type: 'fixed', description: 'Diskon Rp 100.000'}
+        }
 
 
 
